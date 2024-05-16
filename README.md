@@ -6,5 +6,5 @@ This project contains solutions for problems from LeetCode. All solutions are im
 ### 2. Data Structures
 ### 3. Search
 ### 4. Dymanic Programming
-#### 5. Advanced Data Structure
+### 5. Advanced Data Structure
 ### 6. Graph Theory
