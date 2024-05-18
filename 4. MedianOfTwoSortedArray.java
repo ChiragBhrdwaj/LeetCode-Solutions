@@ -1,10 +1,12 @@
-class Solution {
+class Solution
+{
     private int m;
     private int n;
     private int[] nums1;
     private int[] nums2;
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2)
+    {
         m = nums1.length;
         n = nums2.length;
         this.nums1 = nums1;
@@ -14,14 +16,18 @@ class Solution {
         return (a + b) / 2.0;
     }
 
-    private int f(int i, int j, int k) {
-        if (i >= m) {
+    private int f(int i, int j, int k)
+    {
+        if (i >= m)
+        {
             return nums2[j + k - 1];
         }
-        if (j >= n) {
+        if (j >= n)
+        {
             return nums1[i + k - 1];
         }
-        if (k == 1) {
+        if (k == 1) 
+        {
             return Math.min(nums1[i], nums2[j]);
         }
         int p = k / 2;
